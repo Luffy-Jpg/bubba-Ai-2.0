@@ -81,7 +81,7 @@ global.fgsc = 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ=
 global.fgyt = 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ=='
 global.fgpyp = 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ=='
 global.fglog = 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ=='
-global.thumb = fs.readFileSync('https://i.postimg.cc/RZq1xhzD/bubba.jpg')
+global.thumb = 'https://i.postimg.cc/RZq1xhzD/bubba.jpg'
 
 global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
 global.rwait = '⌛'
