@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       })) * 1000
   }
   let muptime = clockString(_muptime)
-  let str = `あR U N T I M Eあ \n\n${muptime}`
+  let str = `𝕭𝖚𝖇𝖇𝖆-Ai \n\n${muptime}`
   conn.sendMessage(m.chat, {
     text: str,
     contextInfo: {
