@@ -65,15 +65,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ▢ *${chats.length}* Total Chats
 
 *≡ OWNER*
-  *GURU*
+  *Jeff*
 ▢ Instagram :
-  • https://instagram.com/asli_guru69
-▢ GitHub :
-  • https://github.com/Guru322
-▢ Telegram : 
-  • t.me/i_want_to_be_isekaied (GURU) 
-▢ YouTube : 
-  • https://youtube.com/@Asliguru
+  • https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==
 
  *≡ S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
@@ -91,7 +85,7 @@ ${
   '```'
 }
 `
-  conn.sendFile(m.chat, pp, 'prefil.jpg', infobt, m, false, { mentions: [who] })
+  conn.sendFile(m.chat, pp, 'https://i.postimg.cc/RZq1xhzD/bubba.jpg', infobt, m, false, { mentions: [who] })
   m.react(done)
 }
 handler.help = ['info']
