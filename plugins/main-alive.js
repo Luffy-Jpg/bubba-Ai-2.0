@@ -2,9 +2,9 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   // Sound
   let name = m.pushName || conn.getName(m.sender)
   var vn = 'https://cdn.jsdelivr.net/gh/Guru322/GURU-BOT@main/Assets/mp3/Alive.mp3'
-  let url = 'https://github.com/Guru322/GURU-BOT'
-  let murl = 'https://youtu.be/DibiLc17dh0?si=xp9bQ-_frEyDB1-i'
-  let img = 'https://cdn.wallpapersafari.com/71/19/7ZfcpT.png'
+  let url = 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ=='
+  let murl = 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ=='
+  let img = 'https://i.postimg.cc/RZq1xhzD/bubba.jpg'
   let con = {
     key: {
       fromMe: false,
@@ -25,15 +25,15 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     mimetype: 'audio/mpeg',
     ptt: true,
     waveform: [100, 0, 100, 0, 100, 0, 100],
-    fileName: 'Guru',
+    fileName: '𝕭𝖚𝖇𝖇𝖆-Ai',
 
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
         title: 'I AM ALIVE',
-        body: 'GURU BOT',
+        body: '𝕭𝖚𝖇𝖇𝖆-Ai',
         thumbnailUrl: img,
-        sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+        sourceUrl: 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==',
         mediaType: 1,
         renderLargerThumbnail: true,
       },
