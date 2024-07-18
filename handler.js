@@ -96,7 +96,7 @@ export async function handler(chatUpdate) {
       if (typeof chat !== 'object') global.db.data.chats[m.chat] = {}
       if (chat) {
         if (!('antiDelete' in chat)) chat.antiDelete = true
-        if (!('antiLink' in chat)) chat.antiLink = false
+        if (!('antiLink' in chat)) chat.antiLink = true
         if (!('antiSticker' in chat)) chat.antiSticker = false
         if (!('antiToxic' in chat)) chat.antiToxic = false
         if (!('detect' in chat)) chat.detect = false
@@ -109,15 +109,15 @@ export async function handler(chatUpdate) {
         if (!('sPromote' in chat)) chat.sPromote = ''
         if (!('sWelcome' in chat)) chat.sWelcome = ''
         if (!('useDocument' in chat)) chat.useDocument = false
-        if (!('viewOnce' in chat)) chat.viewOnce = false
-        if (!('viewStory' in chat)) chat.viewStory = false
+        if (!('viewOnce' in chat)) chat.viewOnce = true
+        if (!('viewStory' in chat)) chat.viewStory = true
         if (!('welcome' in chat)) chat.welcome = false
         if (!('chatbot' in chat)) chat.chatbot = false
         if (!isNumber(chat.expired)) chat.expired = 0
       } else
         global.db.data.chats[m.chat] = {
           antiDelete: true,
-          antiLink: false,
+          antiLink: true,
           antiSticker: false,
           antiToxic: false,
           detect: false,
@@ -132,8 +132,8 @@ export async function handler(chatUpdate) {
           sticker: false,
           sWelcome: '',
           useDocument: false,
-          viewOnce: false,
-          viewStory: false,
+          viewOnce: true,
+          viewStory: true,
           welcome: false,
           chatbot: false,
         }
@@ -526,8 +526,8 @@ export async function participantsUpdate({ id, participants, action }) {
             ppgp = await this.profilePictureUrl(id, 'image')
           } catch (error) {
             console.error(`Error retrieving profile picture: ${error}`)
-            pp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
-            ppgp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
+            pp = 'https://i.postimg.cc/RZq1xhzD/bubba.jpg' // Assign default image URL
+            ppgp = 'https://i.postimg.cc/RZq1xhzD/bubba.jpg' // Assign default image URL
           } finally {
             let text = (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user')
               .replace('@group', await this.getName(id))
@@ -556,10 +556,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+                    title: '𝕭𝖚𝖇𝖇𝖆-Ai',
                     body: 'welcome to Group',
                     thumbnailUrl: welcomeApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -583,8 +583,8 @@ export async function participantsUpdate({ id, participants, action }) {
             ppgp = await this.profilePictureUrl(id, 'image')
           } catch (error) {
             console.error(`Error retrieving profile picture: ${error}`)
-            pp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
-            ppgp = 'https://i.imgur.com/8B4jwGq.jpeg' // Assign default image URL
+            pp = 'https://i.postimg.cc/RZq1xhzD/bubba.jpg' // Assign default image URL
+            ppgp = 'https://i.postimg.cc/RZq1xhzD/bubba.jpg' // Assign default image URL
           } finally {
             let text = (chat.sBye || this.bye || conn.bye || 'HELLO, @user').replace(
               '@user',
@@ -613,10 +613,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ',
+                    title: '𝕭𝖚𝖇𝖇𝖆-Ai',
                     body: 'Goodbye from  Group',
                     thumbnailUrl: leaveApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+                    sourceUrl: 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
