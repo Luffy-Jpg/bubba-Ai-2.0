@@ -18,7 +18,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     text: str,
     contextInfo: {
       mentionedJid: [m.sender],
-      isForwarded: true,
+      isForwarded: false,
       forwardedNewsletterMessageInfo: {
         newsletterJid: '120363178281296360@newsletter',
         newsletterName: global.author,
@@ -27,7 +27,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       forwardingScore: 999,
       externalAdReply: {
         title: '𝕭𝖚𝖇𝖇𝖆-Ai',
-        body: 'R U N T I M E',
+        body: 'BOT MADE BY JEFF',
         thumbnailUrl: pp,
         sourceUrl: 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==',
         mediaType: 1,
