@@ -26,7 +26,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         ? conn.user.jid
         : m.sender
   if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-  let pp = './Assets/Gurulogo.jpg'
+  let pp = 'https://i.postimg.cc/RZq1xhzD/bubba.jpg'
   let user = global.db.data.users[who]
   let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } =
     global.db.data.users[who]
@@ -74,7 +74,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 💡 *_Remember, when in doubt, use ${usedPrefix}list or ${usedPrefix}help2. It's like my magic spell book!_* 💡
 `
 
-  conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, null, rpyt)
+  conn.sendFile(m.chat, pp, 'https://i.postimg.cc/RZq1xhzD/bubba.jpg', str, m, null, rpyt)
   m.react(done)
 }
 handler.help = ['main']
